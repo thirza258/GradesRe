@@ -63,6 +63,147 @@ class HomeState extends State<Home> {
                     borderRadius: BorderRadius.circular(31),
                   ),
                 ),
+                child: Column(
+                  children: [
+                    Container(
+                      child: const Text(
+                        'Nama Matkul',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Color(0xFF0B0E6A),
+                          fontSize: 24,
+                          fontFamily: 'Hanken Grotesk',
+                          fontWeight: FontWeight.w700,
+                        ),
+                      )
+                    ),
+                    Container(
+                      child: const Text(
+                        'Your Result',
+                        style: TextStyle(
+                          color: Color(0xFF17067D),
+                          fontSize: 24,
+                          fontFamily: 'Hanken Grotesk',
+                          fontWeight: FontWeight.w400,
+                          letterSpacing: 0.36,
+                        ),
+                      )
+                    ),
+                    Container(
+                      width: 250,
+                      height: 250,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                              left: 0,
+                              top: 0,
+                              child: Container(
+                                width: 250,
+                                height: 249,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 0,
+                                      top: 0,
+                                      child: Container(
+                                        width: 250,
+                                        height: 249,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 106,
+                                              top: 32,
+                                              child: Container(
+                                                width: 144,
+                                                height: 145,
+                                                decoration: ShapeDecoration(
+                                                  color: Color(0xFFEBEBEB),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 0,
+                                              top: 62,
+                                              child: Container(
+                                                width: 144,
+                                                height: 145,
+                                                decoration: ShapeDecoration(
+                                                  color: Color(0xFFEBEBEB),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 31,
+                                              top: 0,
+                                              child: Container(
+                                                width: 144,
+                                                height: 145,
+                                                decoration: ShapeDecoration(
+                                                  color: Color(0xFFEBEBEB),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              left: 92,
+                                              top: 104,
+                                              child: Container(
+                                                width: 144,
+                                                height: 145,
+                                                decoration: ShapeDecoration(
+                                                  color: Color(0xFFEBEBEB),
+                                                  shape: OvalBorder(),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 96,
+                                      top: 134,
+                                      child: Text(
+                                        'of 100',
+                                        style: TextStyle(
+                                          color: Color(0xFF17224A),
+                                          fontSize: 20,
+                                          fontFamily: 'Hanken Grotesk',
+                                          fontWeight: FontWeight.w400,
+                                          letterSpacing: -0.60,
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      left: 78,
+                                      top: 58,
+                                      child: SizedBox(
+                                        width: 90,
+                                        height: 69,
+                                        child: Text(
+                                          '76',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            color: Color(0xFF17224A),
+                                            fontSize: 64,
+                                            fontFamily: 'Hanken Grotesk',
+                                            fontWeight: FontWeight.w700,
+                                            letterSpacing: 0.96,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                          ),
+                        ],
+                      )
+                    )
+                  ]
+                )
               ),
               Container(
                 width: 294,
@@ -89,82 +230,279 @@ class HomeState extends State<Home> {
                       Positioned(
                         child: Container(
                           width: 285,
-                          height: 332,
-                          margin: const EdgeInsets.only(top: 3),
+                          height: 351,
                           child: Column(
                             children: [
                               Positioned(
-                                  child: Container(
-                                    width: 285,
-                                    height: 58,
-                                    margin: const EdgeInsets.only(top: 5),
-                                    child: Stack(
-                                      children: [
-                                        Positioned(
-                                          left: 0,
-                                          top: 0,
-                                          child: Container(
-                                            width: 285,
-                                            height: 58,
-                                            decoration: ShapeDecoration(
-                                              color: Colors.white,
-                                              shape: RoundedRectangleBorder(
-                                                side: BorderSide(width: 0.50),
-                                                borderRadius: BorderRadius.circular(15),
-                                              ),
+                                child: Container(
+                                  width: 285,
+                                  height: 58,
+                                  margin: const EdgeInsets.only(top: 10),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 0,
+                                        top: 0,
+                                        child: Container(
+                                          width: 285,
+                                          height: 58,
+                                          decoration: ShapeDecoration(
+                                            color: Colors.white,
+                                            shape: RoundedRectangleBorder(
+                                              side: BorderSide(width: 0.50),
+                                              borderRadius: BorderRadius.circular(15),
                                             ),
                                           ),
                                         ),
-                                        Positioned(
+                                      ),
+                                      Positioned(
+                                        left: 14,
+                                        right: 14,
+                                        child: Container(
+                                          width: 245,
+                                          height: 50,
+                                          child: Stack(
+                                            children: const [
+                                              Positioned(
+                                                left: 15,
+                                                top: 15,
+                                                child: Text(
+                                                  "UAS",
+                                                  textAlign: TextAlign.center,
+                                                  style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 20,
+                                                    fontFamily: 'Hanken Grotesk',
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
+                                                ),
+                                              ),
+                                              Positioned(
+                                                left: 193,
+                                                top: 20,
+                                                child: Text(
+                                                  '80/100',
+                                                  textAlign: TextAlign.center,
+                                                  style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 16,
+                                                    fontFamily: 'Hanken Grotesk',
+                                                    fontWeight: FontWeight.w600,
+                                                  )
+                                                )
+                                              ),
+
+                                            ]
+                                          )
+                                        )
+                                      )
+                                    ],
+                                  )
+                                )
+                              ),
+                              Positioned(
+                                child: Container(
+                                  width: 285,
+                                  height: 58,
+                                  margin: const EdgeInsets.only(top: 10),
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 0,
+                                        top: 0,
+                                        child: Container(
+                                          width: 285,
+                                          height: 58,
+                                          decoration: ShapeDecoration(
+                                            color: Colors.white,
+                                            shape: RoundedRectangleBorder(
+                                              side: BorderSide(width: 0.50),
+                                              borderRadius: BorderRadius.circular(15),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
                                           left: 14,
                                           right: 14,
                                           child: Container(
-                                            width: 245,
-                                            height: 50,
-                                            child: Stack(
-                                              children: const [
-                                                Positioned(
-                                                  left: 15,
-                                                  top: 15,
-                                                  child: Text(
-                                                    "UAS",
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 20,
-                                                      fontFamily: 'Hanken Grotesk',
-                                                      fontWeight: FontWeight.w600,
+                                              width: 245,
+                                              height: 50,
+                                              child: Stack(
+                                                  children: const [
+                                                    Positioned(
+                                                      left: 15,
+                                                      top: 15,
+                                                      child: Text(
+                                                        "UAS",
+                                                        textAlign: TextAlign.center,
+                                                        style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontSize: 20,
+                                                          fontFamily: 'Hanken Grotesk',
+                                                          fontWeight: FontWeight.w600,
+                                                        ),
+                                                      ),
                                                     ),
-                                                  ),
-                                                ),
-                                                Positioned(
-                                                  left: 193,
-                                                  top: 20,
-                                                  child: Text(
-                                                    '80/100',
-                                                    textAlign: TextAlign.center,
-                                                    style: TextStyle(
-                                                      color: Colors.black,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Hanken Grotesk',
-                                                      fontWeight: FontWeight.w600,
+                                                    Positioned(
+                                                        left: 193,
+                                                        top: 20,
+                                                        child: Text(
+                                                        '80/100',
+                                                        textAlign: TextAlign.center,
+                                                        style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontSize: 16,
+                                                          fontFamily: 'Hanken Grotesk',
+                                                          fontWeight: FontWeight.w600,
+                                                          )
+                                                        )
                                                     )
-                                                  )
-                                                ),
-
-                                              ]
-                                            )
+                                                  ]
+                                              )
                                           )
-                                        )
-                                      ],
-                                    )
+                                      )
+                                    ],
+                                  )
+                                )
+                              ),
+                              Positioned(
+                                  child: Container(
+                                      width: 285,
+                                      height: 58,
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            left: 0,
+                                            top: 0,
+                                            child: Container(
+                                              width: 285,
+                                              height: 58,
+                                              decoration: ShapeDecoration(
+                                                color: Colors.white,
+                                                shape: RoundedRectangleBorder(
+                                                  side: BorderSide(width: 0.50),
+                                                  borderRadius: BorderRadius.circular(15),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                              left: 14,
+                                              right: 14,
+                                              child: Container(
+                                                  width: 245,
+                                                  height: 50,
+                                                  child: Stack(
+                                                      children: const [
+                                                        Positioned(
+                                                          left: 15,
+                                                          top: 15,
+                                                          child: Text(
+                                                            "UAS",
+                                                            textAlign: TextAlign.center,
+                                                            style: TextStyle(
+                                                              color: Colors.black,
+                                                              fontSize: 20,
+                                                              fontFamily: 'Hanken Grotesk',
+                                                              fontWeight: FontWeight.w600,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Positioned(
+                                                            left: 193,
+                                                            top: 20,
+                                                            child: Text(
+                                                                '80/100',
+                                                                textAlign: TextAlign.center,
+                                                                style: TextStyle(
+                                                                  color: Colors.black,
+                                                                  fontSize: 16,
+                                                                  fontFamily: 'Hanken Grotesk',
+                                                                  fontWeight: FontWeight.w600,
+                                                                )
+                                                            )
+                                                        )
+                                                      ]
+                                                  )
+                                              )
+                                          )
+                                        ],
+                                      )
                                   )
                               ),
                               Positioned(
                                   child: Container(
                                       width: 285,
                                       height: 58,
-                                      margin: const EdgeInsets.only(top: 5),
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            left: 0,
+                                            top: 0,
+                                            child: Container(
+                                              width: 285,
+                                              height: 58,
+                                              decoration: ShapeDecoration(
+                                                color: Colors.white,
+                                                shape: RoundedRectangleBorder(
+                                                  side: BorderSide(width: 0.50),
+                                                  borderRadius: BorderRadius.circular(15),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                              left: 14,
+                                              right: 14,
+                                              child: Container(
+                                                  width: 245,
+                                                  height: 50,
+                                                  child: Stack(
+                                                      children: const [
+                                                        Positioned(
+                                                          left: 15,
+                                                          top: 15,
+                                                          child: Text(
+                                                            "UAS",
+                                                            textAlign: TextAlign.center,
+                                                            style: TextStyle(
+                                                              color: Colors.black,
+                                                              fontSize: 20,
+                                                              fontFamily: 'Hanken Grotesk',
+                                                              fontWeight: FontWeight.w600,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Positioned(
+                                                            left: 193,
+                                                            top: 20,
+                                                            child: Text(
+                                                                '80/100',
+                                                                textAlign: TextAlign.center,
+                                                                style: TextStyle(
+                                                                  color: Colors.black,
+                                                                  fontSize: 16,
+                                                                  fontFamily: 'Hanken Grotesk',
+                                                                  fontWeight: FontWeight.w600,
+                                                                )
+                                                            )
+                                                        )
+                                                      ]
+                                                  )
+                                              )
+                                          )
+                                        ],
+                                      )
+                                  )
+                              ),
+                              Positioned(
+                                  child: Container(
+                                      width: 285,
+                                      height: 58,
+                                      margin: const EdgeInsets.only(top: 10),
                                       child: Stack(
                                         children: [
                                           Positioned(
@@ -230,6 +568,30 @@ class HomeState extends State<Home> {
                           )
                         )
                       ),
+                      Container(
+                        width: 288,
+                        height: 57,
+                        decoration: ShapeDecoration(
+                          color: Color(0xFFF9C200),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
+                        child: TextButton(
+                          onPressed: () {  },
+                          child: const Text(
+                            'Continue',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontFamily: 'Hanken Grotesk',
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.30,
+                            ),
+                          )
+                        ),
+                      )
 
                     ],
                   )
