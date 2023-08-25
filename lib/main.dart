@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'grades.dart';
+
 void main() {
-  runApp(const MyGrades());
+  runApp(MyGrades());
 }
 
 class MyGrades extends StatelessWidget {
   const MyGrades({super.key});
 
+
   @override
   Widget build(BuildContext context) {
+
     final theme = ThemeData.light();
     return MaterialApp(
       theme: theme,
@@ -36,7 +40,6 @@ class HomeState extends State<Home> {
         child: Container(
           width: 867,
           height: 594,
-
           decoration: ShapeDecoration(
             color: Colors.white,
             shape: RoundedRectangleBorder(
@@ -66,6 +69,7 @@ class HomeState extends State<Home> {
                 child: Column(
                   children: [
                     Container(
+                      margin: const EdgeInsets.only(top: 60),
                       child: const Text(
                         'Nama Matkul',
                         textAlign: TextAlign.center,
@@ -78,6 +82,7 @@ class HomeState extends State<Home> {
                       )
                     ),
                     Container(
+                      margin: const EdgeInsets.only(top: 10),
                       child: const Text(
                         'Your Result',
                         style: TextStyle(
@@ -92,6 +97,7 @@ class HomeState extends State<Home> {
                     Container(
                       width: 250,
                       height: 250,
+                      margin: const EdgeInsets.only(top: 50),
                       child: Stack(
                         children: [
                           Positioned(
@@ -103,64 +109,21 @@ class HomeState extends State<Home> {
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                      left: 0,
                                       top: 0,
+                                      left: 0,
+                                      bottom: 40,
                                       child: Container(
                                         width: 250,
-                                        height: 249,
-                                        child: Stack(
-                                          children: [
-                                            Positioned(
-                                              left: 106,
-                                              top: 32,
-                                              child: Container(
-                                                width: 144,
-                                                height: 145,
-                                                decoration: ShapeDecoration(
-                                                  color: Color(0xFFEBEBEB),
-                                                  shape: OvalBorder(),
-                                                ),
-                                              ),
-                                            ),
-                                            Positioned(
-                                              left: 0,
-                                              top: 62,
-                                              child: Container(
-                                                width: 144,
-                                                height: 145,
-                                                decoration: ShapeDecoration(
-                                                  color: Color(0xFFEBEBEB),
-                                                  shape: OvalBorder(),
-                                                ),
-                                              ),
-                                            ),
-                                            Positioned(
-                                              left: 31,
-                                              top: 0,
-                                              child: Container(
-                                                width: 144,
-                                                height: 145,
-                                                decoration: ShapeDecoration(
-                                                  color: Color(0xFFEBEBEB),
-                                                  shape: OvalBorder(),
-                                                ),
-                                              ),
-                                            ),
-                                            Positioned(
-                                              left: 92,
-                                              top: 104,
-                                              child: Container(
-                                                width: 144,
-                                                height: 145,
-                                                decoration: ShapeDecoration(
-                                                  color: Color(0xFFEBEBEB),
-                                                  shape: OvalBorder(),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
+                                        height: 454,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            'assets/bubble.png',
+                                          ),
+                                          fit: BoxFit.contain,
                                         ),
                                       ),
+                                    )
                                     ),
                                     Positioned(
                                       left: 96,
@@ -182,7 +145,7 @@ class HomeState extends State<Home> {
                                       child: SizedBox(
                                         width: 90,
                                         height: 69,
-                                        child: Text(
+                                         child: Text(
                                           '76',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
