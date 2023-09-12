@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'http_helper.dart';
 import 'grades.dart';
 
 void main() {
@@ -9,7 +10,6 @@ void main() {
 
 class MyGrades extends StatelessWidget {
   const MyGrades({super.key});
-
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +32,23 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> {
+  HttpHelper helper = HttpHelper();
+
+  @override
+  void initState() {
+    helper = HttpHelper();
+    initialize();
+    super.initState();
+  }
+
+  Future initialize() async {
+    var nilai = [];
+    nilai = (await helper.getNilai("1"))!;
+    setState(() {
+      nilai = nilai;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
 
@@ -115,17 +132,15 @@ class HomeState extends State<Home> {
                                       child: Container(
                                         width: 250,
                                         height: 454,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         image: DecorationImage(
-                                          image: AssetImage(
-                                            'assets/bubble.png',
-                                          ),
+                                          image: AssetImage('assets/bubble.png',),
                                           fit: BoxFit.contain,
                                         ),
                                       ),
                                     )
                                     ),
-                                    Positioned(
+                                    const Positioned(
                                       left: 96,
                                       top: 134,
                                       child: Text(
@@ -139,7 +154,7 @@ class HomeState extends State<Home> {
                                         ),
                                       ),
                                     ),
-                                    Positioned(
+                                    const Positioned(
                                       left: 78,
                                       top: 58,
                                       child: SizedBox(
