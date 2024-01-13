@@ -5,7 +5,7 @@ import 'http_helper.dart';
 import 'grades.dart';
 
 void main() {
-  runApp(MyGrades());
+  runApp(const MyGrades());
 }
 
 class MyGrades extends StatelessWidget {
@@ -184,8 +184,8 @@ class HomeState extends State<Home> {
                 )
               ),
               Container(
-                width: 294,
-                height: 476,
+                width: 300,
+                height: 515,
                 margin: const EdgeInsets.only(left: 40),
                 child:
                   Column(
@@ -205,14 +205,15 @@ class HomeState extends State<Home> {
                           ),
                         ),
                       ),
-                      Positioned(
-                        child: Container(
+                      // Positioned(
+                      //   child: Container(
+                  Container(
                           width: 285,
-                          height: 351,
+                          height: 447,
                           child: Column(
                             children: [
-                              Positioned(
-                                child: Container(
+                              // Positioned(
+                                Container(
                                   width: 285,
                                   height: 58,
                                   margin: const EdgeInsets.only(top: 10),
@@ -227,7 +228,7 @@ class HomeState extends State<Home> {
                                           decoration: ShapeDecoration(
                                             color: Colors.white,
                                             shape: RoundedRectangleBorder(
-                                              side: BorderSide(width: 0.50),
+                                              side: const BorderSide(width: 0.50),
                                               borderRadius: BorderRadius.circular(15),
                                             ),
                                           ),
@@ -276,10 +277,9 @@ class HomeState extends State<Home> {
                                       )
                                     ],
                                   )
-                                )
-                              ),
-                              Positioned(
-                                child: Container(
+                                ),
+                              // Positioned(
+                                Container(
                                   width: 285,
                                   height: 58,
                                   margin: const EdgeInsets.only(top: 10),
@@ -342,10 +342,9 @@ class HomeState extends State<Home> {
                                       )
                                     ],
                                   )
-                                )
-                              ),
-                              Positioned(
-                                  child: Container(
+                                ),
+                              // Positioned(
+                                  Container(
                                       width: 285,
                                       height: 58,
                                       margin: const EdgeInsets.only(top: 10),
@@ -408,10 +407,9 @@ class HomeState extends State<Home> {
                                           )
                                         ],
                                       )
-                                  )
-                              ),
-                              Positioned(
-                                  child: Container(
+                                  ),
+                              // Positioned(
+                                  Container(
                                       width: 285,
                                       height: 58,
                                       margin: const EdgeInsets.only(top: 10),
@@ -474,10 +472,9 @@ class HomeState extends State<Home> {
                                           )
                                         ],
                                       )
-                                  )
-                              ),
-                              Positioned(
-                                  child: Container(
+                                  ),
+                              // Positioned(
+                                  Container(
                                       width: 285,
                                       height: 58,
                                       margin: const EdgeInsets.only(top: 10),
@@ -540,15 +537,11 @@ class HomeState extends State<Home> {
                                           )
                                         ],
                                       )
-                                  )
-                              )
-                            ],
-                          )
-                        )
                       ),
-                      Container(
+                            Container(
                         width: 288,
                         height: 57,
+                        margin: const EdgeInsets.only(top: 10),
                         decoration: ShapeDecoration(
                           color: Color(0xFFF9C200),
                           shape: RoundedRectangleBorder(
@@ -574,10 +567,15 @@ class HomeState extends State<Home> {
                     ],
                   )
               )
-            ]
+
+    ]
           )
-        )
-      )
+
+
+    )
+    ])
+    )
+    )
     );
   }
 }
